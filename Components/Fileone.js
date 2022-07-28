@@ -9,6 +9,10 @@ return(
 
 <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
 </View>
 
@@ -18,8 +22,14 @@ return(
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'black',
+      flexDirection:'column',
       alignItems: 'center',
-      justifyContent: 'center',
+      justifyContent: 'flex-start',
+      direction:'rtl',
+
+      color:'black',
+      backgroundColor: '#F5F5F5',
+      marginTop:100,
+      
     },
 });
