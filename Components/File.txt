@@ -1,0 +1,3 @@
+In this app we are testing React Natibe App.
+
+Resources can be found in God Docs
