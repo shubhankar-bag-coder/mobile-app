@@ -1,7 +1,7 @@
 import Fileone from "./Components/Fileone";
 
 // Bootstrap doesnt work we use Flexbox
-import { StyleSheet, Text, View,Image, TouchableOpacity} 
+import { View, StyleSheet, Text,Image, TouchableOpacity} 
 from 'react-native';
 
 
