@@ -4,4 +4,5 @@ Resources can be found in God Docs
 
 https://reactnative.dev/docs/layout-props
 
+reactnative Fonts:
 https://directory.vercel.app/
