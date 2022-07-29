@@ -1,4 +1,4 @@
-# Hello, Welcome to React-Native App :wave:
+# Hello :wave: Welcome to React-Native App 
 In this app we are testing React Native App.
 
 
