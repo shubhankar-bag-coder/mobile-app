@@ -1,7 +1,11 @@
 In this app we are testing React Natibe App.
 
-Resources can be found in God Docs
 
-.[React-Native Flex Example](https://reactnative.dev/docs/layout-props)
+# Resources under
+God Docs in [OneDrive](https://rapidqubedigital-my.sharepoint.com/personal/shubhankar_bag_rapidqube_com/_layouts/15/onedrive.aspx) & Local Storage
 
-.[React-Native Fonts](https://directory.vercel.app/)
+> Links
+
+[React-Native Flex Example](https://reactnative.dev/docs/layout-props)
+
+[React-Native Fonts](https://directory.vercel.app/)
