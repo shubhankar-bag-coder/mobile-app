@@ -2,10 +2,10 @@
 In this app we are testing React Native App.
 
 
-## Resources under
+## 	:chains: under
 God Docs in [OneDrive](https://rapidqubedigital-my.sharepoint.com/personal/shubhankar_bag_rapidqube_com/_layouts/15/onedrive.aspx) & Local Storage
 
-> Links below:
+> :link: below
 
 [React-Native Flex Example](https://reactnative.dev/docs/layout-props)
 
