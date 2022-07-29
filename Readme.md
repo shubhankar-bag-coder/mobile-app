@@ -7,6 +7,6 @@ God Docs in [OneDrive](https://rapidqubedigital-my.sharepoint.com/personal/shubh
 
 > Links :link: below
 
-[React-Native Flex Example](https://reactnative.dev/docs/layout-props)
+    1. [React-Native Flex Example](https://reactnative.dev/docs/layout-props)
 
-[React-Native Fonts](https://directory.vercel.app/)
+    2. [React-Native Fonts](https://directory.vercel.app/)
