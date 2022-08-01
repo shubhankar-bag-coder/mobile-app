@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useCallback, useEffect, useState } from 'react';
 import { StyleSheet, Text, View,Image, TouchableOpacity} 
 from 'react-native';
+
 import { 
   Poppins_400Regular,
 
@@ -20,7 +21,7 @@ import * as Font from 'expo-font';
 
 
 
-export default function Fileone(){
+export default function Fileone(props){
  
   
   // let [fontsLoad]=useFonts({
@@ -42,13 +43,23 @@ return(
 
 
 <View style={styles.container}>
-      <StatusBar style="auto" />
-  <View style={styles.text}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Text>Open up App.js to start working on your app!</Text>
+  <View styles={{
+    backgroundColor:'black', height:90, diplay:'none'
+  }}>
+
+  </View>
+<StatusBar style="auto" />
+  <View style={styles.M_text}>
+
+
+      <Text style={styles.txt} >{props.items[0].word}</Text>
+      <Text style={styles.txt} >{props.items[1].word}</Text>
+      <Text style={styles.txt} >{props.items[2].word}</Text>
+      <Text style={styles.txt} >{props.items[3].word}</Text>
+
+
+      {/* <Text style={styles.txt} >Open up App.js to start working on your app!</Text> */}
+     
   </View>
 </View>
 
@@ -60,15 +71,22 @@ const styles = StyleSheet.create({
       flex: 1,
       flexDirection:'column',
       alignItems: 'strectch',
-      justifyContent: 'space-between',
-      
-      direction:'rtl',
+      justifyContent: 'center',
 
       color:'black',
       backgroundColor: '#F5F5F5',
       marginTop:100,
       
-    },text:{
-      margin:30,
+    },M_text:{
+      // margin:30,
+      textAlign:'center',
+    },
+    txt:{
+      // margin:30,
+      paddingVertical:30,
+      marginVertical:10,
+      borderWidth:1.5,
+      borderColor:'blue'
+     
     }
 });
