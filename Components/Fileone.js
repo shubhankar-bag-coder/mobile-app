@@ -51,14 +51,19 @@ return(
 <StatusBar style="auto" />
   <View style={styles.M_text}>
 
+    {/* Trying Map function */}
+    {/* {
+      props.items.map((data)=>
+      <Text styles={styles.txt} word={data.word}/>
+      )
+    } */}
 
-      <Text style={styles.txt} >{props.items[0].word}</Text>
-      <Text style={styles.txt} >{props.items[1].word}</Text>
-      <Text style={styles.txt} >{props.items[2].word}</Text>
-      <Text style={styles.txt} >{props.items[3].word}</Text>
 
+      <Text style={styles.txt}> {props.items[0].word} </Text>
+      <Text style={styles.txt}> {props.items[1].word} </Text>
+      <Text style={styles.txt}> {props.items[2].word} </Text>
+      <Text style={styles.txt}> {props.items[3].word} </Text>
 
-      {/* <Text style={styles.txt} >Open up App.js to start working on your app!</Text> */}
      
   </View>
 </View>

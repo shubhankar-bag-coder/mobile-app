@@ -7,19 +7,19 @@ from 'react-native';
 const Data=[
   {
     key:'1',
-    word:"I am Developer"
+    word:"I am Developer."
   },
   {
     key:'2',
-    word:"I am Developing Software on React"
+    word:"I am Developing Software on React."
   },
   {
     key:'3',
-    word:"I am Developing Software on React-Native"
+    word:"I am Developing Software on React-Native."
   },
   {
     key:'3',
-    word:"I will learn Software Developement & SDLC"
+    word:"I will learn Software Developement & SDLC."
   },
 ]
 
