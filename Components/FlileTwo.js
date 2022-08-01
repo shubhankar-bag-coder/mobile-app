@@ -33,6 +33,7 @@ return(
     <View styles={styles.M_Text}>
     <FlatList
         data={SData}
+        
         renderItem={ ( {item} )=>{
             return <Text styles={styles.txt}>{item.text}</Text>
         }  }
