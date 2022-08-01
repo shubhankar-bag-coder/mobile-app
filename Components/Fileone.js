@@ -3,62 +3,14 @@ import React from 'react';
 import { StyleSheet, Text, View,FlatList} 
 from 'react-native';
 
-
-// const SData=[
-//   {
-//     key:'1',
-//     text:"I am Developer."
-//   },
-//   {
-//     key:'2',
-//     text:"I am Developing Software on React."
-//   },
-//   {
-//     key:'3',
-//     text:"I am Developing Software on React-Native."
-//   },
-//   {
-//     key:'3',
-//     text:"I will learn Software Developement & SDLC."
-//   },
-// ];
-
-
-
 export default function Fileone(){
-
-  // const rItems=({text})=>{
-  //   return(
-  //     <Text style={styles.txt}> {text}</Text>  
-
-  //   )
-  // }
 
 return(
 <View style={styles.container}>
   
-<StatusBar style="auto" />
-  <View style={styles.M_text}>
-
-
-{/* Trying Map function */}
-    
-{/* <FlatList
-    data={SData}
-    keyExtractor={item => item.id}
-
-    renderItem={rItems}
-  /> */}
-  <Text style={styles.txt}> Hello </Text>
-  
-
-
-      {/* <Text style={styles.txt}> {props.items[0].word} </Text>
-      <Text style={styles.txt}> {props.items[1].word} </Text>
-      <Text style={styles.txt}> {props.items[2].word} </Text>
-      <Text style={styles.txt}> {props.items[3].word} </Text> */}
-
-     
+{/* <StatusBar style="auto" /> */}
+  <View>
+  <Text> Hello </Text>
   </View>
 </View>
 
@@ -69,7 +21,7 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       flexDirection:'column',
-      // alignItems: 'strectch',
+      // alignItems:'center',
       justifyContent: 'center',
 
       color:'black',
@@ -85,7 +37,8 @@ const styles = StyleSheet.create({
       paddingVertical:30,
       marginVertical:10,
       borderWidth:1.5,
-      borderColor:'blue'
+      borderColor:'blue',
+      fontSize:20,
      
     }
 });
