@@ -1,5 +1,6 @@
 # Hello :wave: Welcome to React-Native App 
 In this app we are testing React Native App.
+Delete this & make new Repository & App.
 
 
 ## Resources  :chains:  under
