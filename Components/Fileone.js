@@ -1,63 +1,38 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useCallback, useEffect, useState } from 'react';
-import { StyleSheet, Text, View,Image, TouchableOpacity,FlatList} 
+import React from 'react';
+import { StyleSheet, Text, View,FlatList} 
 from 'react-native';
 
-import { 
-  Poppins_400Regular,
 
-  Poppins_500Medium,
-
-  Poppins_700Bold,
-
-  Poppins_900Black,
-
-} from '@expo-google-fonts/poppins'
-
-import AppLoading from 'expo-app-loading';
-import * as SplashScreen from 'expo-splash-screen';
-import * as Font from 'expo-font';
-
-const SData=[
-  {
-    key:'1',
-    text:"I am Developer."
-  },
-  {
-    key:'2',
-    text:"I am Developing Software on React."
-  },
-  {
-    key:'3',
-    text:"I am Developing Software on React-Native."
-  },
-  {
-    key:'3',
-    text:"I will learn Software Developement & SDLC."
-  },
-];
+// const SData=[
+//   {
+//     key:'1',
+//     text:"I am Developer."
+//   },
+//   {
+//     key:'2',
+//     text:"I am Developing Software on React."
+//   },
+//   {
+//     key:'3',
+//     text:"I am Developing Software on React-Native."
+//   },
+//   {
+//     key:'3',
+//     text:"I will learn Software Developement & SDLC."
+//   },
+// ];
 
 
 
 export default function Fileone(){
-  // let [fontsLoad]=useFonts({
-  //   Poppins_400Regular,
-  
-  //   Poppins_500Medium,
-  
-  //   Poppins_700Bold,
-  
-  //   Poppins_900Black,
-  
-  //   });
-  
-  // if(!fontsLoad) {
-  //   return <AppLoading/>
-  // }
 
-  // const renderItem = ({ item }) => (
-  //   <Text style={styles.txt} text={item.text  }/>
-  // );
+  // const rItems=({text})=>{
+  //   return(
+  //     <Text style={styles.txt}> {text}</Text>  
+
+  //   )
+  // }
 
 return(
 <View style={styles.container}>
@@ -65,19 +40,17 @@ return(
 <StatusBar style="auto" />
   <View style={styles.M_text}>
 
-    {/* Trying Map function */}
+
+{/* Trying Map function */}
     
-  
-  <FlatList
+{/* <FlatList
     data={SData}
     keyExtractor={item => item.id}
 
-    renderItem={(elem)=>
-    {
-      return <Text style={styles.txt}> { elem.item.text } </Text>
-    }}
-    
-  />
+    renderItem={rItems}
+  /> */}
+  <Text style={styles.txt}> Hello </Text>
+  
 
 
       {/* <Text style={styles.txt}> {props.items[0].word} </Text>
@@ -96,7 +69,7 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       flexDirection:'column',
-      alignItems: 'strectch',
+      // alignItems: 'strectch',
       justifyContent: 'center',
 
       color:'black',
