@@ -17,12 +17,13 @@ const  FileThree=()=>{
 return(
 
 <View style={styles.container}>
-    <TouchableOpacity onPress={ ()=>
+    <TouchableOpacity style={styles.buttonStyle}
+        onPress={ ()=>
         {
-            Alert.alert(randomColor())
+            Alert.alert(randomColor());
         }}>
 
-        <Text styles={styles.Colo}>Generate Colors</Text>
+        <Text styles={styles.textStyle}>Generate Colors</Text>
     </TouchableOpacity>
 
     <View style={styles.imgcontainer}>
@@ -40,23 +41,31 @@ return(
 
 const styles = StyleSheet.create({
     container:{
-        flex:1,
-        justifyContent:'center',
-        backgroundColor:'#5aa6f2',
-        marginVertical:10,
-        fontSize:20,
-        textAlign:'center'
-    },
-    Colo:{
-        backgroundColor:'#5aa6f2',
-
-    },
-    imgcontainer:{
-        borderRadius:10,
-        borderWidth:12,
-        borderColor:'red',
-        width:100,
+        // display: "flex",
+        marginTop: 100,
+    },buttonStyle: {
+        display:'flex',
+        justifyContent: "center", 
+        alignItems: "center", 
+        backgroundColor: "#00boff", 
+        position: "relative", 
+        overflow: "hidden", 
+        color: "#eee", 
+        paddingVertical: 10, 
+        paddingHorizontal: 15, 
+        margin: 0, 
+        borderRadius: 5,
+    },textStyle: {
+        color: "white",
+        textTransform: "uppercase"
+    }, imageContainer: {
+        display:'flex',
+        marginVertical: 50, 
+        paddingHorizontal: 30, 
+        }
+        
+        
     }
-});
+);
 
 export default FileThree;
