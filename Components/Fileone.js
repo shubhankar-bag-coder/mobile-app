@@ -3,14 +3,50 @@ import React from 'react';
 import { StyleSheet, Text, View,FlatList} 
 from 'react-native';
 
+
+const SData=[
+  {
+    id:'1',
+    text:"I am learning Programming"
+  },
+  {
+    id:'2',
+    text:"I am learning React"
+  },
+  {
+    id:'3',
+    text:"I am learning React-Native"
+  },
+  {
+    id:'4',
+    text:"I am learning & Developing Projects"
+  },
+  {
+    id:'5',
+    text:"I am learning Programming in order to become Developer"
+  },
+]
+
+
 export default function Fileone(){
+
+  const renderItem=( {text} )=> (
+    <Text style={styles.txt} text={text}/>
+  )
+
 
 return(
 <View style={styles.container}>
   
 {/* <StatusBar style="auto" /> */}
   <View>
-  <Text> Hello </Text>
+  <FlatList 
+    data={SData}
+    renderItem={renderItem}
+    keyExtractor={item => item.id}
+
+  />
+
   </View>
 </View>
 

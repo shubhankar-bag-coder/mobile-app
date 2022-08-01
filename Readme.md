@@ -1,9 +1,9 @@
-# Hello Delete this & make new Repository & App.
+# Hello :wave:
 In this app we are testing React Native App.
 
 
 
-## Resources  :chains:  under
+## Resources :chains:  under
 God Docs in [OneDrive](https://rapidqubedigital-my.sharepoint.com/personal/shubhankar_bag_rapidqube_com/_layouts/15/onedrive.aspx) & Local Storage
 
 > Links :link: below
