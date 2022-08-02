@@ -34,10 +34,25 @@ return(
     <FlatList
         data={newColor}
         keyExtractor={ (key) => key }
+    
         renderItem={ ( { item } ) => {
-
+            // console  .log(item);
         return(
             <View style={styles.imageContainer}>
+            <View style={{
+                backgroundColor:item,
+
+                display:'flex',
+                justifyContent:'center',
+                alignItems:'center',
+                width:'80%',
+                height:100,
+                borderRadius:5,
+                marginTop:5,
+            }}
+            >
+
+            </View>
             <Text styles={{
                 display:'flex',
                 justifyContent:'center',
@@ -47,7 +62,7 @@ return(
                 height:100,
                 borderRadius:5,
                 marginTop:5,
-            }}>{item}</Text>
+            }}> {item} </Text>
             </View>
         )}}
         />
@@ -94,7 +109,12 @@ const styles = StyleSheet.create({
         width:'100%',
         marginVertical: 10, 
         paddingHorizontal: 30,
+        fontWeight:'bold',
         } 
 });
 
 export default FileThree;
+
+
+
+// App Sources Code for Random Color Generator
