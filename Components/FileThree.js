@@ -36,7 +36,7 @@ return(
         keyExtractor={ (key) => key }
     
         renderItem={ ( { item } ) => {
-            // console  .log(item);
+            // console.log(item);
         return(
             <View style={styles.imageContainer}>
             <View style={{
@@ -49,20 +49,10 @@ return(
                 height:100,
                 borderRadius:5,
                 marginTop:5,
-            }}
-            >
+            }}>
 
-            </View>
-            <Text styles={{
-                display:'flex',
-                justifyContent:'center',
-                alignItems:'center',
-                backgroundColor:item,
-                width:'80%',
-                height:100,
-                borderRadius:5,
-                marginTop:5,
-            }}> {item} </Text>
+            </View> 
+                <Text > {item} </Text> 
             </View>
         )}}
         />
