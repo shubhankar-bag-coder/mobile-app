@@ -15,30 +15,45 @@ var req = new Request(url);
 
 export default function FileFour(){
 
-   let getUserData= async ()=>{
-        try {
-            let response= await fetch(req);
-            let data=await response.json();
-            console.log(data);
-            
-        } catch (error) {
-            console.log(error);
-        }
-    };
-    // fetch("https://thapatechnical.github.io/userapiUsers.json");
-    // fetch(req);
+    let [Data, setData] = useState('');
+    
+    let [isLoaded, setisLoaded] = useState(true)
 
     useEffect( () => { 
         getUserData(); 
     }, [ ] );
 
 
-
-    
+   let getUserData= async ()=>{
+        try {
+            let response= await fetch(req); 
+            let data=await response.json();
+            console.log(data.articles);
+            setData(data);
+            setisLoaded(false);
+            
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
 return(
 <View styles={styles.container}>
-    <Text>Hello</Text>
+    
+    {/* Flatlist  Add data remaining Data Data.articles Data. */}
+
+    <FlatList
+            data={Data}
+            keyExtractor={ ( id ) => id }
+            renderItem={ ( { item } ) => {
+                return(
+                <View>
+                        <Text> {item.title} </Text>
+                        <Text> {item.author}</Text>
+                </View>
+                )
+            } }
+    /> 
 
 </View>
 )}
