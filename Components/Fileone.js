@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View,FlatList} 
+import React,{useState} from 'react';
+import { StyleSheet, Text, View,FlatList, Button} 
 from 'react-native';
 
 
@@ -13,7 +13,6 @@ return(
   
 {/* <StatusBar style="auto" /> */}
 
-<Text>hello</Text>
 </View>
 
 

@@ -9,10 +9,10 @@ import FileFour from "./Components/FileFour";
 export default function App() {
   return (
     <View >
-      {/* <Fileone /> */}
+      <Fileone />
       {/* <FlileTwo/> */}
       {/* <FileThree/> */}
-      <FileFour/>
+      {/* <FileFour/> */}
     </View>
   );
 }
