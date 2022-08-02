@@ -34,7 +34,7 @@ return(
     <FlatList
         data={newColor}
         keyExtractor={ (key) => key }
-        renderItem={ (item) =>{
+        renderItem={ ( { item } ) => {
 
         return(
             <View style={styles.imageContainer}>
