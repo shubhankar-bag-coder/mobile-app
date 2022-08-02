@@ -1,11 +1,12 @@
 import React,{useState} from "react";
-import { View,StyleSheet,Text,TouchableOpacity,FlatList} from "react-native";
+import { View,StyleSheet,Text,TouchableOpacity,FlatList,Alert} from "react-native";
 
 
 
 const  FileThree=()=>{
 
-    const [newColor, setNewColor] = useState([])
+    const [newColor, setNewColor] = useState([]);
+
     const randomColor=()=>{
         const red=Math.floor(Math.random()*256);
         const blue=Math.floor(Math.random()*256);
@@ -13,8 +14,7 @@ const  FileThree=()=>{
         
         // console.log(red);
         return `rgb( ${red}, ${blue}, ${green} )`;
-
-    };
+    };  
     console.log(newColor)
     
 
@@ -25,7 +25,7 @@ return(
         onPress={ ()=>
         {
             // Alert.alert(randomColor());
-            setNewColor( [...newColor,randomColor() ] )
+            setNewColor( [...newColor, randomColor() ] );
         }}>
 
         <Text styles={styles.textStyle}>Generate Colors</Text>
@@ -39,10 +39,14 @@ return(
         return(
             <View style={styles.imageContainer}>
             <Text styles={{
+                display:'flex',
+                justifyContent:'center',
+                alignItems:'center',
                 backgroundColor:item,
-                width:100,
+                width:'80%',
                 height:100,
-                borderRadius:10,
+                borderRadius:5,
+                marginTop:5,
             }}>{item}</Text>
             </View>
         )}}
@@ -68,17 +72,20 @@ const styles = StyleSheet.create({
         display:'flex',
         justifyContent: "center", 
         alignItems: "center", 
-        backgroundColor: "#00boff", 
+
+        backgroundColor: "#00b0ff", 
+
         position: "relative", 
         overflow: "hidden", 
+
         color: "#eee", 
         paddingVertical: 10, 
         paddingHorizontal: 15, 
-        margin: 0, 
+
+        marginBottom:10, 
         borderRadius: 5,
     },textStyle: {
         color: "white",
-        textTransform: "uppercase",
         fontSize:20
     }, imageContainer: {
         display:'flex',
@@ -87,11 +94,7 @@ const styles = StyleSheet.create({
         width:'100%',
         marginVertical: 10, 
         paddingHorizontal: 30,
-       
-        }
-        
-        
-    }
-);
+        } 
+});
 
 export default FileThree;
