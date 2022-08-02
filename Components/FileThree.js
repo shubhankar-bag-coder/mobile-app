@@ -3,7 +3,7 @@ import { View,StyleSheet,Text,TouchableOpacity,FlatList,Alert} from "react-nativ
 
 
 
-const  FileThree=()=>{
+const FileThree=()=>{
 
     const [newColor, setNewColor] = useState([]);
 

@@ -3,6 +3,7 @@ import { View}
 from 'react-native';
 import FlileTwo from "./Components/FlileTwo";
 import FileThree from "./Components/FileThree";
+import FileFour from "./Components/FileFour";
 
 
 export default function App() {
@@ -10,7 +11,8 @@ export default function App() {
     <View >
       {/* <Fileone /> */}
       {/* <FlileTwo/> */}
-      <FileThree/>
+      {/* <FileThree/> */}
+      <FileFour/>
     </View>
   );
 }
