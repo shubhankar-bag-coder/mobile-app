@@ -37,14 +37,9 @@ return(
       </View>
 
       <TouchableOpacity 
-        style={ [styles.buttonStyle, {
-          backgroundColor:agree ? "#4630EB" : "grey" } ]}
-
-          disabled={!agree}
-
-        
+        style={ [styles.buttonStyle, { backgroundColor:agree ? "#4630EB" : "grey" } ]}
+        disabled={!agree}
         >
-
         <Text>Login</Text>
       </TouchableOpacity>
 
