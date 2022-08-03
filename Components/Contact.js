@@ -31,7 +31,6 @@ return(
               value={ agree }
               onValueChange={ ( )=> setAgree(!agree) }
               color={agree ? "#4630EB" : undefined}
-
           />
           <Text>I have read the rules</Text>
       </View>
