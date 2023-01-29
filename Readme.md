@@ -7,7 +7,7 @@ Make it Production Build.
 Build Mobile version for Android:- Apk * IOS:- IPA 
 
 ## Resources :chains:  under
-God Docs in [OneDrive](https://rapidqubedigital-my.sharepoint.com/personal/shubhankar_bag_rapidqube_com/_layouts/15/onedrive.aspx) & Local Storage
+God Docs in Local Storage
 
 
 Links :link: below
